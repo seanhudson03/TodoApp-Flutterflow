@@ -201,7 +201,7 @@ class _TasksWidgetState extends State<TasksWidget> {
             Align(
               alignment: const AlignmentDirectional(-1.0, 1.0),
               child: Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 0.0, 24.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 20.0),
                 child: FFButtonWidget(
                   onPressed: () async {
                     GoRouter.of(context).prepareAuthEvent();
