@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "10963381322",
+    "project_id": "todo-btyxra",
+    "storage_bucket": "todo-btyxra.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:10963381322:android:ea735ef2e0a8362a058ab3",
+        "android_client_info": {
+          "package_name": "com.mycompany.todo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGtJuR0R1d8XP50d1R_DUS537DrJZZUwQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
