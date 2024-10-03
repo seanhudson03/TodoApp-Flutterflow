@@ -1,4 +1,5 @@
 import '/auth/firebase_auth/auth_util.dart';
+import '/backend/api_requests/api_calls.dart';
 import '/backend/backend.dart';
 import '/backend/firebase_storage/storage.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
@@ -464,8 +465,17 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                           displayName: _model.textController1.text,
                           color: _model.textController2.text,
                         ));
+                        _model.sentEmail = await SendEmailToUserCall.call(
+                          name: _model.textController1.text,
+                          to: currentUserEmail,
+                        );
+
+                        FFAppState().firstTime = true;
+                        FFAppState().update(() {});
 
                         context.goNamed('tasks');
+
+                        safeSetState(() {});
                       },
                       text: 'Complete Profile',
                       options: FFButtonOptions(

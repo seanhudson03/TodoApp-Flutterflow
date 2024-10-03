@@ -87,7 +87,7 @@ class _LoginWidgetState extends State<LoginWidget>
                       ),
                     ),
                     Container(
-                      height: 398.0,
+                      height: 376.0,
                       decoration: const BoxDecoration(),
                       child: Column(
                         children: [
