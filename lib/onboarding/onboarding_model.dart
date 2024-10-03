@@ -1,3 +1,4 @@
+import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'onboarding_widget.dart' show OnboardingWidget;
 import 'package:flutter/material.dart';
@@ -19,6 +20,8 @@ class OnboardingModel extends FlutterFlowModel<OnboardingWidget> {
   TextEditingController? textController2;
   String? Function(BuildContext, String?)? textController2Validator;
   DateTime? datePicked;
+  // Stores action output result for [Backend Call - API (sendEmailToUser)] action in Button widget.
+  ApiCallResponse? sentEmail;
 
   @override
   void initState(BuildContext context) {}
